@@ -151,3 +151,6 @@ nnoremap ghb <Cmd>call VSCodeNotify('workbench.action.editor.previousChange')<CR
 nnoremap ghu <Cmd>call VSCodeNotify('git.revertSelectedRanges')<CR>
 nnoremap gan <Cmd>call VSCodeNotify('editor.action.marker.nextInFiles')<CR>
 
+nnoremap gbm <Cmd>call VSCodeNotify('bookmarks.toggle')<CR>
+nnoremap gbn <Cmd>call VSCodeNotify('bookmarks.jumpToNext')<CR>
+nnoremap gbb <Cmd>call VSCodeNotify('bookmarks.jumpToPrevious')<CR>
