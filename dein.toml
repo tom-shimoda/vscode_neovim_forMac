@@ -1,0 +1,11 @@
+# --- easymotion
+[[plugins]]
+repo = 'asvetliakov/vim-easymotion'
+hook_add = '''
+    map , <leader>
+    map ,, <leader><leader>s
+    nmap <leader>s <Plug>(easymotion-s2)
+
+    let g:EasyMotion_smartcase = 1
+'''
+
