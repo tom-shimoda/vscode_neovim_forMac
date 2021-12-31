@@ -133,6 +133,8 @@ nnoremap <Space>n <C-i>zz
 nnoremap <leader>x <Cmd>call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
 "ハイライト切替
 nnoremap <F1> :noh<cr>
+" なぜかYキーでの行yankが効かないので
+nnoremap <S-y> yy
 
 "タブ移動
 nmap <S-h> gT
