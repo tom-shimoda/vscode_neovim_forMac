@@ -105,11 +105,14 @@ let g:python3_host_prog = 'C:\Users\t.shimoda\AppData\Local\Programs\Python\Pyth
 nnoremap <Space>g :source ~/vscode_neovim<CR>
 "space割り当て解除 (誤爆を防ぐため)
 nnoremap <Space> <Nop>
+"Foldが開いてしまうのでj,kを再マッピング
+map j gj
+map k gk
 "3行飛び上下移動
-noremap <S-j> jjj
-noremap <S-k> jjj
-noremap <C-j> kkk
-noremap <C-k> kkk
+nmap <S-j> jjj
+nmap <S-k> jjj
+nmap <C-j> kkk
+nmap <C-k> kkk
 "行頭文字に移動
 noremap <Space>h ^
 "行末移動
@@ -156,3 +159,9 @@ nnoremap gan <Cmd>call VSCodeNotify('editor.action.marker.nextInFiles')<CR>
 nnoremap gbm <Cmd>call VSCodeNotify('bookmarks.toggle')<CR>
 nnoremap gbn <Cmd>call VSCodeNotify('bookmarks.jumpToNext')<CR>
 nnoremap gbb <Cmd>call VSCodeNotify('bookmarks.jumpToPrevious')<CR>
+
+nnoremap <Space>{ <Cmd>call VSCodeNotify('editor.foldAll')<CR>
+nnoremap <Space>} <Cmd>call VSCodeNotify('editor.unfoldAll')<CR>
+nnoremap <Space>[ <Cmd>call VSCodeNotify('editor.foldRecursively')<CR>
+nnoremap <Space>] <Cmd>call VSCodeNotify('editor.unfoldRecursively')<CR>
+nnoremap <Space>f <Cmd>call VSCodeNotify('editor.toggleFold')<CR>
