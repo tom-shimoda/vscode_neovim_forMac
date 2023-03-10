@@ -109,10 +109,10 @@ nnoremap <Space> <Nop>
 map j gj
 map k gk
 "3行飛び上下移動
-nmap <S-j> jjj
-nmap <S-k> jjj
-nmap <C-j> kkk
-nmap <C-k> kkk
+map <S-j> jjj
+map <S-k> jjj
+map <C-j> kkk
+map <C-k> kkk
 "行頭文字に移動
 noremap <Space>h ^
 "行末移動
